@@ -3,7 +3,7 @@
 # finvariant-mcp
 
 [![CI](https://github.com/arikanatakan/finvariant-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/arikanatakan/finvariant-mcp/actions/workflows/ci.yml)
-[![PyPI](https://img.shields.io/pypi/v/finvariant-mcp?v=3)](https://pypi.org/project/finvariant-mcp/)
+[![PyPI](https://img.shields.io/pypi/v/finvariant-mcp?v=4)](https://pypi.org/project/finvariant-mcp/)
 [![License: MIT](https://img.shields.io/github/license/arikanatakan/finvariant-mcp)](LICENSE)
 
 An MCP server that exposes [finvariant](https://github.com/arikanatakan/finvariant),
@@ -18,6 +18,8 @@ does not tie, a retained-earnings figure that does not roll forward. Generated
 financial statements fail silently. The check belongs in a deterministic,
 versioned, validated library that the agent calls; the agent chooses what to
 verify and explains the verdict.
+
+![finvariant-mcp architecture: an AI agent calls the server's check_statements and describe_schema tools, which route to the validated finvariant core and return a structured audit report (verdict, findings, provenance)](assets/architecture.png)
 
 ## Tools
 
