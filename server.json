@@ -1,13 +1,13 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.arikanatakan/finvariant-mcp",
-  "description": "Deterministic financial-statement integrity checks (footing, the accounting equation, cash-flow tie-outs, articulation) for AI agents.",
-  "version": "0.1.0",
+  "description": "Financial-statement integrity checks (footing, tie-out) for AI agents.",
+  "version": "0.1.1",
   "packages": [
     {
       "registryType": "pypi",
       "identifier": "finvariant-mcp",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "transport": {
         "type": "stdio"
       }

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "finvariant-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "MCP server for finvariant: deterministic financial-statement integrity checks for AI agents."
 readme = "README.md"
 license = { text = "MIT" }
