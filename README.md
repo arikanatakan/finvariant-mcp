@@ -3,7 +3,7 @@
 # finvariant-mcp
 
 [![CI](https://github.com/arikanatakan/finvariant-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/arikanatakan/finvariant-mcp/actions/workflows/ci.yml)
-[![PyPI](https://img.shields.io/pypi/v/finvariant-mcp?v=2)](https://pypi.org/project/finvariant-mcp/)
+[![PyPI](https://img.shields.io/pypi/v/finvariant-mcp?v=3)](https://pypi.org/project/finvariant-mcp/)
 [![License: MIT](https://img.shields.io/github/license/arikanatakan/finvariant-mcp)](LICENSE)
 
 An MCP server that exposes [finvariant](https://github.com/arikanatakan/finvariant),
