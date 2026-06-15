@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "finvariant-mcp"
+version = "0.1.0"
+description = "MCP server for finvariant: deterministic financial-statement integrity checks for AI agents."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Atakan Arikan" }]
+requires-python = ">=3.10"
+dependencies = ["finvariant>=0.1.0", "mcp>=1.0"]
+keywords = [
+    "mcp", "model-context-protocol", "ai-agents", "accounting",
+    "financial-statements", "audit", "tie-out", "integrity",
+    "balance-sheet", "three-statement-model",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial :: Accounting",
+]
+
+[project.scripts]
+finvariant-mcp = "finvariant_mcp.server:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff", "build"]
+
+[project.urls]
+Homepage = "https://github.com/arikanatakan/finvariant-mcp"
+Repository = "https://github.com/arikanatakan/finvariant-mcp"
+Issues = "https://github.com/arikanatakan/finvariant-mcp/issues"
+Library = "https://github.com/arikanatakan/finvariant"
+
+[tool.setuptools.packages.find]
+include = ["finvariant_mcp*"]
+
+[tool.ruff]
+line-length = 88
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
