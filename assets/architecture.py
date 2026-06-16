@@ -50,7 +50,7 @@ ax.text(3, 91, "validated statement-integrity checks for AI agents",
 
 # agent
 box(12, 62, 18, 22,
-    "AI agent\n\nMCP client\n(Claude Code,\nClaude Desktop, ...)",
+    "AI agent\n\nMCP client",
     NEUT_F, NEUT_E, fs=8.2)
 
 # server container
