@@ -4,7 +4,7 @@
 
 [![CI](https://github.com/arikanatakan/finvariant-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/arikanatakan/finvariant-mcp/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/finvariant-mcp?v=4)](https://pypi.org/project/finvariant-mcp/)
-[![License: MIT](https://img.shields.io/github/license/arikanatakan/finvariant-mcp)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 An MCP server that exposes [finvariant](https://github.com/arikanatakan/finvariant),
 the deterministic financial-statement integrity checker for Python, as a tool
