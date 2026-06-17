@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -7,7 +7,8 @@ name = "finvariant-mcp"
 version = "0.1.1"
 description = "MCP server for finvariant: deterministic financial-statement integrity checks for AI agents."
 readme = "README.md"
-license = { text = "MIT" }
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [{ name = "Atakan Arikan" }]
 requires-python = ">=3.10"
 dependencies = ["finvariant>=0.1.0", "mcp>=1.0"]
@@ -20,11 +21,11 @@ classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Financial and Insurance Industry",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Office/Business :: Financial :: Accounting",
 ]
 
@@ -32,7 +33,7 @@ classifiers = [
 finvariant-mcp = "finvariant_mcp.server:main"
 
 [project.optional-dependencies]
-dev = ["pytest>=7", "ruff", "build"]
+dev = ["pytest>=7", "ruff", "mypy", "build"]
 
 [project.urls]
 Homepage = "https://github.com/arikanatakan/finvariant-mcp"
@@ -45,6 +46,9 @@ include = ["finvariant_mcp*"]
 
 [tool.ruff]
 line-length = 88
+
+[tool.mypy]
+ignore_missing_imports = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
